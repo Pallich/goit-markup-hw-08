@@ -1,0 +1,39 @@
+.footer__contacts {
+    margin-right: 70px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.footer__contacts-items:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer__adress-link {
+    color: $prymary-bg-color;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $animations-time-function;
+
+    &:hover,
+    &:focus {
+        color: $active-color;
+        fill: $active-color;
+    }
+}
+
+.footer__contacts-link {
+    color: $footer-contacts-color;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $animations-time-function;
+
+    &:hover,
+    &:focus {
+        color: $active-color;
+        fill: $active-color;
+    }
+}

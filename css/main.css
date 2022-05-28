@@ -59,6 +59,19 @@ p {
   font-style: normal;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.menu-btn {
+  position: absolute;
+  right: 0;
+}
+
 .button {
   font-size: 16px;
   line-height: 1.63;
@@ -82,14 +95,6 @@ p {
   padding-bottom: 94px;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -101,13 +106,15 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #2196f3;
@@ -119,11 +126,15 @@ p {
 
 .footer__logo {
   display: inline-block;
-  margin-bottom: 20px;
 }
 
 .footer__logo-second {
   color: #ffffff;
+}
+
+.header__nav {
+  display: none;
+  margin-left: 93px;
 }
 
 .header__nav-link {
@@ -155,10 +166,6 @@ p {
   background-color: #2196f3;
 }
 
-.header__nav {
-  margin-left: 93px;
-}
-
 .header__nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,6 +180,17 @@ p {
 
 .header__nav-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.header__contacts-list {
+  display: none;
+  margin-left: auto;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__contacts-icon {
@@ -207,19 +225,6 @@ p {
 .header__contacts-link:hover, .header__contacts-link:focus {
   color: #2196f3;
   fill: #2196f3;
-}
-
-.header__contacts-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .header__contacts-items:not(:last-child) {
@@ -494,14 +499,9 @@ p {
   background-color: #188ce8;
 }
 
-.hero.section {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -512,15 +512,20 @@ p {
   background-color: #c4c4c4;
 }
 
+.hero.section {
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  width: 696px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -571,12 +576,6 @@ p {
 .benefits__icon {
   width: 70px;
   height: 70px;
-}
-
-.benefits__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .benefits__items:not(:last-child) {

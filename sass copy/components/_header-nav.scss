@@ -1,11 +1,4 @@
-.header__nav {
-    display: none;
-
-    margin-left: 93px;
-}
-
 .header__nav-link {
-    
     position: relative;
 
     color: $prymary-text-color;
@@ -37,7 +30,9 @@
     background-color: $active-color;
 }
 
-
+.header__nav {
+    margin-left: 93px;
+}
 
 .header__nav-list {
     display: flex;
