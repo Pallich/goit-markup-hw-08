@@ -1,0 +1,15 @@
+.button {
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+
+    background: $button-background;
+    border-radius: 4px;
+    border: none;
+
+    cursor: pointer;
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: $animations-time-function;
+}

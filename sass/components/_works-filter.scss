@@ -1,0 +1,26 @@
+.works__btn-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.works__btn {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+
+    &:focus,
+    &:hover {
+            color: $prymary-bg-color;
+            background: $active-color;
+            box-shadow: 0px 2px 2px $filter-buttons-shadow-color-one,
+                0px 1px 2px $filter-buttons-shadow-color-two,
+                0px 3px 2px $filter-buttons-shadow-color-three;
+            }
+}
+
+.works__btn-items:not(:last-child) {
+    margin-right: 8px;
+}
+

@@ -1,0 +1,49 @@
+.header__nav-link {
+    position: relative;
+
+    color: $prymary-text-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $animations-time-function;
+
+    &--current,
+    &:focus,
+    &:hover {
+        color: $active-color;
+    }
+}
+
+.header__nav-link--current::after {
+    position: absolute;
+
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    left: 0;
+    bottom: 0;
+    background-color: $active-color;
+}
+
+.header__nav {
+    margin-left: 93px;
+}
+
+.header__nav-list {
+    display: flex;
+}
+
+.header__nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header__nav-item:not(:last-child) {
+    margin-right: 50px;
+}
