@@ -90,11 +90,6 @@ p {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -510,6 +505,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #c4c4c4;
+  margin-bottom: 60px;
 }
 
 .hero.section {
@@ -563,11 +559,12 @@ p {
 
 .benefits.section {
   padding-bottom: 0;
+  margin-bottom: 60px;
 }
 
 .benefits__icon-box {
   height: 120px;
-  width: 270px;
+  max-width: 450px;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -579,7 +576,7 @@ p {
 }
 
 .benefits__items:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .benefits__title {
@@ -597,6 +594,10 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.doing {
+  display: none;
 }
 
 .doing__title {
@@ -649,11 +650,7 @@ p {
   -webkit-box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
           box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
   border-radius: 0px 0px 4px 4px;
-  width: 270px;
-}
-
-.team__items:not(:last-child) {
-  margin-right: 30px;
+  max-width: 450px;
 }
 
 .team__info {
@@ -687,12 +684,6 @@ p {
   text-align: center;
   color: #757575;
   margin-bottom: 16px;
-}
-
-.team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .social-list {

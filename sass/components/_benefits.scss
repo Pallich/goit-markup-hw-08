@@ -1,15 +1,16 @@
 .benefits.section {
     padding-bottom: 0;
+    margin-bottom: 60px;
 }
 
 .benefits__icon-box {
     @extend %centeredFlex;
     height: 120px;
-    width: 270px;
+    max-width: 450px;
     background-color: $button-background;
     border-radius: 4px;
     margin-bottom: 30px;
-    
+
 }
 
 .benefits__icon {
@@ -22,7 +23,8 @@
 // }
 
 .benefits__items:not(:last-child) {
-    margin-right: 30px;
+    // margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .benefits__title {
