@@ -1,4 +1,24 @@
 .menu-btn {
     position: absolute;
     right: 0;
+    top: 10px;
+    border: none;
+background-color: transparent;
+
+&:hover,
+&:focus {
+    fill: $active-color;
+}
+}
+
+.menu-btn__icon-menu-close {
+    display: none;
+}
+
+.menu-btn.is-open .menu-btn__icon-menu-close {
+    display: block;
+}
+
+.menu-btn.is-open .menu-btn__icon-menu {
+    display: none;
 }

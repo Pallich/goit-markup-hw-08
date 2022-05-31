@@ -1,10 +1,10 @@
-.footer__subscribe-label {
-    display: flex;
-}
+// .footer__subscribe-label {
+//     display: flex;
+// }
 
-.footer__subscribe {
-    margin-left: 93px;
-}
+// .footer__subscribe {
+//     margin-left: 93px;
+// }
 
 .footer__subscribe-title {
     text-transform: uppercase;
@@ -15,9 +15,10 @@
 }
 
 .footer__subscribe-input {
+    margin-bottom: 20px;
     padding: 15px;
     background-color: $footer-background;
-    width: 358px;
+    width: 100%;
     border: 1px solid $subscribe-border-color;
     border-radius: 4px;
     color: $prymary-bg-color;
@@ -44,7 +45,9 @@
 
     cursor: pointer;
     padding: 0;
-    margin-left: 12px;
+        margin-left: auto;
+            margin-right: auto;
+    // margin-left: 12px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;

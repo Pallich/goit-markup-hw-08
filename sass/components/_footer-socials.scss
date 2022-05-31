@@ -1,3 +1,8 @@
+.footer__socials {
+    margin-bottom: 60px;
+}
+
+
 .footer__socials-title {
     text-transform: uppercase;
     color: $prymary-bg-color;
@@ -7,8 +12,11 @@
 }
 
 .footer__socials-list {
+    
     display: flex;
-    fill: $prymary-bg-color;
+    justify-content: center;
+    
+    // fill: $prymary-bg-color;
 }
 
 .footer__socials-items {
@@ -37,5 +45,5 @@
 }
 
 .footer__socials-icon {
-    fill: $prymary-bg-color;
+    fill: $team-icons-color;
 }

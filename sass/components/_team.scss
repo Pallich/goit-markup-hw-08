@@ -1,5 +1,7 @@
 .team {
     background-color: $button-background;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .team__items {
@@ -7,11 +9,11 @@
     box-shadow: 0px 1px 3px $box-shadow-1, 0px 1px 1px $box-shadow-2,
         0px 2px 1px $box-shadow-3;
     border-radius: 0px 0px 4px 4px;
-    max-width: 450px;
+    // max-width: 450px;
 
-    // &:not(:last-child) {
-    //                     margin-right: 30px;
-    //                    } 
+    &:not(:last-child) {
+                        margin-bottom: 30px;
+                       } 
 }
 
 .team__info {
@@ -26,7 +28,7 @@
     text-align: center;
     color: $prymary-text-color;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .team__name {

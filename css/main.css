@@ -62,14 +62,50 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 450px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .menu-btn {
   position: absolute;
   right: 0;
+  top: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-btn:hover, .menu-btn:focus {
+  fill: #2196f3;
+}
+
+.menu-btn__icon-menu-close {
+  display: none;
+}
+
+.menu-btn.is-open .menu-btn__icon-menu-close {
+  display: block;
+}
+
+.menu-btn.is-open .menu-btn__icon-menu {
+  display: none;
 }
 
 .button {
@@ -95,12 +131,16 @@ p {
 }
 
 .header__content {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 60px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -121,6 +161,7 @@ p {
 
 .footer__logo {
   display: inline-block;
+  margin-bottom: 20px;
 }
 
 .footer__logo-second {
@@ -133,7 +174,6 @@ p {
 }
 
 .header__nav-link {
-  position: relative;
   color: #212121;
   font-weight: 500;
   line-height: 1.14;
@@ -521,7 +561,7 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  width: 360px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -564,7 +604,6 @@ p {
 
 .benefits__icon-box {
   height: 120px;
-  max-width: 450px;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -585,6 +624,7 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -643,6 +683,8 @@ p {
 
 .team {
   background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .team__items {
@@ -650,7 +692,10 @@ p {
   -webkit-box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
           box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
   border-radius: 0px 0px 4px 4px;
-  max-width: 450px;
+}
+
+.team__items:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .team__info {
@@ -665,7 +710,7 @@ p {
   text-align: center;
   color: #212121;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .team__name {
@@ -729,13 +774,13 @@ p {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .clients__title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 36px;
   line-height: 1.17;
 }
@@ -747,11 +792,22 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+}
+
+.clients__items {
+  margin: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .clients__items {
+    width: calc((100% - (2 * 30px)) / 2);
+  }
 }
 
 .client__logo-box {
-  width: 170px;
-  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   -webkit-transition-property: fill;
@@ -767,17 +823,8 @@ p {
   fill: #2196f3;
 }
 
-.clients__items {
-  fill: #afb1b8;
-}
-
-.clients__items:not(:last-child) {
-  margin-right: 30px;
-}
-
 .clients__icon {
-  width: 106px;
-  height: 60px;
+  fill: #afb1b8;
 }
 
 .works__btn-list {
@@ -908,30 +955,22 @@ p {
 }
 
 .footer {
+  text-align: center;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
 .footer__contacts {
-  margin-right: 70px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 60px;
 }
 
 .footer__contacts-items:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer__adress-link {
@@ -964,6 +1003,10 @@ p {
   fill: #2196f3;
 }
 
+.footer__socials {
+  margin-bottom: 60px;
+}
+
 .footer__socials-title {
   text-transform: uppercase;
   color: #ffffff;
@@ -976,7 +1019,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  fill: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__socials-items {
@@ -1005,17 +1050,7 @@ p {
 }
 
 .footer__socials-icon {
-  fill: #ffffff;
-}
-
-.footer__subscribe-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.footer__subscribe {
-  margin-left: 93px;
+  fill: #afb1b8;
 }
 
 .footer__subscribe-title {
@@ -1027,9 +1062,10 @@ p {
 }
 
 .footer__subscribe-input {
+  margin-bottom: 20px;
   padding: 15px;
   background-color: #2f303a;
-  width: 358px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: #ffffff;
@@ -1073,7 +1109,8 @@ p {
 .footer__subscribe-button {
   cursor: pointer;
   padding: 0;
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;

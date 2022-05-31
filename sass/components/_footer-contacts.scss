@@ -1,13 +1,15 @@
 .footer__contacts {
-    margin-right: 70px;
+    // margin-right: 70px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    
+    margin-bottom: 60px;
 }
 
 .footer__contacts-items:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .footer__adress-link {
