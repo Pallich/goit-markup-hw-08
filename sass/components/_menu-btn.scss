@@ -1,4 +1,6 @@
 .menu-btn {
+    z-index: 999;
+    
     position: absolute;
     right: 0;
     top: 10px;
@@ -22,3 +24,4 @@ background-color: transparent;
 .menu-btn.is-open .menu-btn__icon-menu {
     display: none;
 }
+

@@ -84,7 +84,22 @@ p {
   }
 }
 
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
 .menu-btn {
+  z-index: 999;
   position: absolute;
   right: 0;
   top: 10px;
@@ -169,7 +184,6 @@ p {
 }
 
 .header__nav {
-  display: none;
   margin-left: 93px;
 }
 
