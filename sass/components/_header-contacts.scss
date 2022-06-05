@@ -1,8 +1,10 @@
 .header__contacts-list {
-    display: none;
+    // display: none;
     // display: flex;
-    margin-left: auto;
+    // margin-left: auto;
 
+    margin-top: 300px;
+    margin-bottom: 64px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     font-weight: 500;
@@ -10,38 +12,70 @@
 }
 
 .header__contacts-icon {
-    margin-right: 10px;
-
-    &:hover,
-    &:focus {
-        color: $active-color;
-        fill: $active-color;
-    }
+    display: none;
 }
+    // margin-right: 10px;
 
-.header__contacts-link {
-    color: $header-contacts;
-    fill: $header-contacts;
-    font-size: 14px;
-    line-height: 1.14px;
+//     &:hover,
+//     &:focus {
+//         color: $active-color;
+//         fill: $active-color;
+//     }
+// }
+
+.header__contacts-mail {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
     letter-spacing: 0.02em;
-
-    display: flex;
-    align-items: center;
-
-    transition-property: color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: $animations-time-function;
-
-    &:hover,
-    &:focus {
-        color: $active-color;
-        fill: $active-color;
-    }
+    color: $active-color;
+    cursor: pointer;
+    
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
 }
+
+.header__contacts-tel {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $header-contacts;
+    cursor: pointer;
+    
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+}
+
+
+// .header__contacts-mail,
+// .header__contacts-tel {
+//     color: $header-contacts;
+//     fill: $header-contacts;
+//     font-size: 14px;
+//     line-height: 1.14px;
+//     letter-spacing: 0.02em;
+
+//     display: flex;
+//     align-items: center;
+
+//     transition-property: color, fill;
+//     transition-duration: 250ms;
+//     transition-timing-function: $animations-time-function;
+
+//     &:hover,
+//     &:focus {
+//         color: $active-color;
+//         fill: $active-color;
+//     }
+// }
 
 
 
 .header__contacts-items:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 32px;
 }
