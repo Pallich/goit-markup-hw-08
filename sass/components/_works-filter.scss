@@ -1,7 +1,11 @@
 .works__btn-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 15px;
+    // justify-content: center;
+    // margin-bottom: 50px;
+    margin-bottom: 40px;
+    margin-top: 60px;
 }
 
 .works__btn {

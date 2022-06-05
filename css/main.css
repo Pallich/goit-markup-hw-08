@@ -96,7 +96,16 @@ p {
 }
 
 .menu-container.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu-btn {
@@ -210,7 +219,6 @@ p {
 }
 
 .header__contacts-list {
-  margin-top: 300px;
   margin-bottom: 64px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -851,10 +859,11 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+  margin-top: 60px;
 }
 
 .works__btn {
@@ -948,12 +957,7 @@ p {
 }
 
 .works__cards-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: calc(100% - (30px * 2))/3;
+  display: block;
 }
 
 .works__cards-link {
@@ -964,10 +968,6 @@ p {
   cursor: pointer;
   -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-}
-
-.works__items:not(:nth-child(3n)) {
-  margin-right: 30px;
 }
 
 .works__items:not(:nth-last-child(-n + 3)) {

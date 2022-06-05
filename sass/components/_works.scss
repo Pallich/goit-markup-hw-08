@@ -65,9 +65,10 @@
 }
 
 .works__cards-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: calc(100% - (30px * 2)) / 3;
+    display: block;
+    // display: flex;
+    // flex-wrap: wrap;
+    // width: calc(100% - (30px * 2)) / 3;
 }
 
 .works__cards-link {
@@ -84,9 +85,9 @@
 
 
 
-.works__items:not(:nth-child(3n)) {
-    margin-right: 30px;
-}
+// .works__items:not(:nth-child(3n)) {
+//     margin-right: 30px;
+// }
 
 .works__items:not(:nth-last-child(-n + 3)) {
     margin-bottom: 30px;
