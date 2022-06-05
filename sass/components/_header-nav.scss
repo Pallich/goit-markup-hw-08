@@ -1,8 +1,12 @@
-// .header__nav {
-//     // display: none;
+.header__nav {
+    @media screen and (min-width: 768px) {
+            display: block;
+        }
 
-//     margin-left: 93px;
-// }
+    // display: none;
+
+    // margin-left: 93px;
+}
 
 .header__nav-link {
     
@@ -42,9 +46,11 @@
 
 
 
-// .header__nav-list {
-//     display: flex;
-// }
+.header__nav-list {
+   @media screen and (min-width: 768px) {
+    display: flex;
+   }
+}
 
 // .header__nav-link {
 //     display: block;
@@ -53,5 +59,8 @@
 // }
 
 .header__nav-item:not(:last-child) {
+
+    @media screen and (max-width: 767px) {
     margin-bottom: 32px;
+}
 }
