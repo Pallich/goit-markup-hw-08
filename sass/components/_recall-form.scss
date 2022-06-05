@@ -141,10 +141,13 @@
     @extend %centeredFlex;
     margin-bottom: 30px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    // font-size: 14px;
+    // line-height: 1.71;
     letter-spacing: 0.03em;
     color: $header-contacts;
+
+    font-size: 12px;
+    line-height: 1.17;
 }
 
 .recall__confirm-link {
