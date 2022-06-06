@@ -1,20 +1,26 @@
 .header__contacts-list {
-    // display: none;
-    // display: flex;
-    // margin-left: auto;
+  // display: none;
+  // display: flex;
+  // margin-left: auto;
 
-    // margin-top: 300px;
+  // margin-top: 300px;
+
+  @media screen and (max-width: 767px) {
     margin-bottom: 64px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     font-weight: 500;
     align-items: center;
+  }
 }
 
 .header__contacts-icon {
+  fill: $header-contacts;
+  @media screen and (max-width: 767px) {
     display: none;
+  }
 }
-    // margin-right: 10px;
+// margin-right: 10px;
 
 //     &:hover,
 //     &:focus {
@@ -24,33 +30,44 @@
 // }
 
 .header__contacts-mail {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
-    color: $active-color;
-    cursor: pointer;
-    
-        &:hover,
-        &:focus {
-            text-decoration: underline;
-        }
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: $active-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.17;
+    color: $header-contacts;
+  }
 }
 
 .header__contacts-tel {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: $header-contacts;
-    cursor: pointer;
-    
-        &:hover,
-        &:focus {
-            text-decoration: underline;
-        }
-}
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $header-contacts;
+  cursor: pointer;
 
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.17;
+    color: $header-contacts;
+  }
+}
 
 // .header__contacts-mail,
 // .header__contacts-tel {
@@ -74,8 +91,10 @@
 //     }
 // }
 
-
-
 .header__contacts-items:not(:last-child) {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
 }

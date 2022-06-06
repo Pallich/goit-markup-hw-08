@@ -1,34 +1,42 @@
 .header__nav {
-    @media screen and (min-width: 768px) {
-            display: block;
-        }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin-left: 88px;
+    margin-right: 84px;
+    // margin-right: 100%;
+  }
 
-    // display: none;
+  // display: none;
 
-    // margin-left: 93px;
+  // margin-left: 93px;
 }
 
 .header__nav-link {
-    
-    // position: relative;
+  // position: relative;
 
-    color: $prymary-text-color;
-    font-weight: 500;
-    font-size: 40px;
-    // text-align: center;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
+  color: $prymary-text-color;
+  font-weight: 500;
+  font-size: 40px;
+  // text-align: center;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: $animations-time-function;
-    cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $animations-time-function;
+  cursor: pointer;
 
-    &--current,
-    &:focus,
-    &:hover {
-        color: $active-color;
-    }
+  &--current,
+  &:focus,
+  &:hover {
+    color: $active-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 // .header__nav-link--current::after {
@@ -44,12 +52,10 @@
 //     background-color: $active-color;
 // }
 
-
-
 .header__nav-list {
-   @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
-   }
+  }
 }
 
 // .header__nav-link {
@@ -59,8 +65,11 @@
 // }
 
 .header__nav-item:not(:last-child) {
-
-    @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 32px;
-}
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
 }

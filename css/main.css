@@ -190,6 +190,11 @@ p {
 @media screen and (min-width: 768px) {
   .header__content {
     height: 80px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -218,7 +223,14 @@ p {
 
 @media screen and (min-width: 768px) {
   .header__nav {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 88px;
+    margin-right: 84px;
   }
 }
 
@@ -242,6 +254,13 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+  .header__nav-link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .header__nav-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -255,18 +274,32 @@ p {
   }
 }
 
-.header__contacts-list {
-  margin-bottom: 64px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  .header__nav-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__contacts-list {
+    margin-bottom: 64px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .header__contacts-icon {
-  display: none;
+  fill: #757575;
+}
+
+@media screen and (max-width: 767px) {
+  .header__contacts-icon {
+    display: none;
+  }
 }
 
 .header__contacts-mail {
@@ -282,6 +315,14 @@ p {
   text-decoration: underline;
 }
 
+@media screen and (min-width: 768px) {
+  .header__contacts-mail {
+    font-size: 12px;
+    line-height: 1.17;
+    color: #757575;
+  }
+}
+
 .header__contacts-tel {
   font-weight: 500;
   font-size: 24px;
@@ -295,8 +336,22 @@ p {
   text-decoration: underline;
 }
 
+@media screen and (min-width: 768px) {
+  .header__contacts-tel {
+    font-size: 12px;
+    line-height: 1.17;
+    color: #757575;
+  }
+}
+
 .header__contacts-items:not(:last-child) {
   margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__contacts-items:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .header__socials-list {
