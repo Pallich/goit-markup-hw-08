@@ -60,6 +60,7 @@ p {
 }
 
 .container {
+  outline: 1px solid tomato;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -661,8 +662,6 @@ p {
 }
 
 .hero {
-  max-width: 480px;
-  height: 400px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -674,9 +673,37 @@ p {
   margin-bottom: 60px;
 }
 
+@media screen and (max-width: 767px) {
+  .hero {
+    max-width: 480px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1200px;
+    height: 600px;
+  }
+}
+
 .hero.section {
   padding-top: 118px;
   padding-bottom: 118px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero.section {
+    padding-top: 200;
+    padding-bottom: 200;
+  }
 }
 
 .hero__title {
@@ -735,9 +762,37 @@ p {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits__icon-box {
+    width: 354px;
+  }
+}
+
 .benefits__icon {
   width: 70px;
   height: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__items {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__items:nth-child(2n) {
+    margin-left: 30px;
+  }
 }
 
 .benefits__items:not(:last-child) {
