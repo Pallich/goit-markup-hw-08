@@ -1,41 +1,46 @@
 .footer__contacts {
-    // margin-right: 70px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    
-    margin-bottom: 60px;
+  // margin-right: 70px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+    margin-left: 60px;
+  }
 }
 
 .footer__contacts-items:not(:last-child) {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .footer__adress-link {
-    color: $prymary-bg-color;
+  color: $prymary-bg-color;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: $animations-time-function;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $animations-time-function;
 
-    &:hover,
-    &:focus {
-        color: $active-color;
-        fill: $active-color;
-    }
+  &:hover,
+  &:focus {
+    color: $active-color;
+    fill: $active-color;
+  }
 }
 
 .footer__contacts-link {
-    color: $footer-contacts-color;
+  color: $footer-contacts-color;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: $animations-time-function;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $animations-time-function;
 
-    &:hover,
-    &:focus {
-        color: $active-color;
-        fill: $active-color;
-    }
+  &:hover,
+  &:focus {
+    color: $active-color;
+    fill: $active-color;
+  }
 }

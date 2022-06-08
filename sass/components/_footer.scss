@@ -1,16 +1,14 @@
 .footer {
-text-align: center;
-    background-color: $footer-background;
-    padding-top: 60px;
-    padding-bottom: 60px;
+  text-align: center;
+  background-color: $footer-background;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-// .footer__container {
-//     display: flex;
-//     align-items: baseline;
-// }
-
-
-
-
-
+.footer__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: baseline;
+  }
+}

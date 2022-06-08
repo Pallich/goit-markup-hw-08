@@ -1,49 +1,47 @@
 .footer__socials {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
-
 .footer__socials-title {
-    text-transform: uppercase;
-    color: $prymary-bg-color;
-    font-size: 14px;
-    line-height: 1.17;
-    margin-bottom: 20px;
+  text-transform: uppercase;
+  color: $prymary-bg-color;
+  font-size: 14px;
+  line-height: 1.17;
+  margin-bottom: 20px;
 }
 
 .footer__socials-list {
-    
-    display: flex;
-    justify-content: center;
-    
-    // fill: $prymary-bg-color;
+  display: flex;
+  justify-content: center;
+
+  // fill: $prymary-bg-color;
 }
 
 .footer__socials-items {
-    border-radius: 50%;
-    background-color: $footer-background-icons;
+  border-radius: 50%;
+  background-color: $footer-background-icons;
 
-    &:not(:last-child) {
-        margin-right: 10px;
-    }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .footer__socials-link {
-    @extend %centeredFlex;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+  @extend %centeredFlex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: $animations-time-function;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $animations-time-function;
 
-    &:hover,
-    &:focus {
-        background-color: $active-color;
-    }
+  &:hover,
+  &:focus {
+    background-color: $active-color;
+  }
 }
 
 .footer__socials-icon {
-    fill: $team-icons-color;
+  fill: $prymary-bg-color;
 }
