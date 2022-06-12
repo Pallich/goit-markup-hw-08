@@ -62,6 +62,10 @@
   padding-bottom: 20px;
   padding-top: 20px;
   border-top: none;
+
+  @media screen and (min-width: 768px) {
+    flex-grow: 1;
+  }
 }
 
 .works__cards-list {
@@ -88,6 +92,12 @@
   &:focus {
     cursor: pointer;
     box-shadow: 1px 4px 6px $works-card-shadow-color-one, 0px 4px 4px $works-card-shadow-color-two, 0px 1px 1px $works-card-shadow-color-three;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 }
 
