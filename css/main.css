@@ -1188,9 +1188,7 @@ p {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-    width: calc(100% - (15px * 2))/2;
+    margin: -15px;
   }
 }
 
@@ -1206,13 +1204,10 @@ p {
 
 @media screen and (min-width: 768px) {
   .works__items {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 15px;
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
   }
-}
-
-.works__items:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
 }
 
 .footer {
