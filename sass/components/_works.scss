@@ -1,5 +1,12 @@
 .works__container {
   align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 
 .works__name {
@@ -74,15 +81,15 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
-    // margin-left: -15px;
-    // margin-right: -15px;
+    // margin: -15px;
+    margin-left: -15px;
+    margin-right: -15px;
     // width: calc(100% - (15px * 2)) / 2;
   }
 
-  // display: flex;
-  // flex-wrap: wrap;
-  // width: calc(100% - (30px * 2)) / 3;
+  //   @media screen and (min-width: 1200px) {
+  //     width: calc(100% - (30px * 2)) / 3;
+  //   }
 }
 
 .works__cards-link {
@@ -102,12 +109,21 @@
 }
 
 .works__items {
-  @media screen and (min-width: 768px) {
-    margin: 15px;
-    // margin-left: 15px;
-    // margin-right: 15px;
+  @media screen and (max-width: 1199px) {
+    margin-left: 15px;
+    margin-right: 15px;
 
     flex-basis: calc(50% - 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% - (30px * 2)) / 3;
+  }
+}
+
+.works__items:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
   }
 }
 

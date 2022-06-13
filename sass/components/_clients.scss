@@ -29,9 +29,11 @@
 }
 
 .client__logo-box {
-  // width: 170px;
-  // height: 92px;
-  // margin: 30px;
+  // @media screen and (min-width: 1200px) {
+  //   width: 170px;
+  //   height: 92px;
+  //   margin: 30px;
+  // }
 
   border: 1px solid $team-icons-color;
   border-radius: 4px;
@@ -53,11 +55,25 @@
     width: 226px;
     height: 92px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+    // margin: 30px;
+  }
 }
 
 .clients__icon {
   fill: $team-icons-color;
 }
+
+// .client__logo-box {
+//   @media screen and (min-width: 1200px) {
+//     width: 170px;
+//     height: 92px;
+//     margin: 30px;
+//   }
+// }
 
 // .clients__items {
 //     fill: $team-icons-color;

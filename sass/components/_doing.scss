@@ -1,44 +1,48 @@
 .doing {
-    display: none;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .doing__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    margin-top: 0;
-    margin-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .doing__list {
-    display: flex;
+  display: flex;
 }
 
 .doing__foto {
-    display: block;
+  display: block;
 }
 
 .doing__items {
-    position: relative;
+  position: relative;
 
-    &:not(:last-child) {
-            margin-right: 30px;
-        }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .doing__text {
-    position: absolute;
-    @extend %centeredFlex;
-    width: 100%;
-    height: 70px;
-    background-color: $doing-cards-bgcolor;
-    text-transform: uppercase;
-    left: 0;
-    bottom: 0;
-    color: $prymary-bg-color;
-    font-weight: 700;
-    line-height: 1.17;
+  position: absolute;
+  @extend %centeredFlex;
+  width: 100%;
+  height: 70px;
+  background-color: $doing-cards-bgcolor;
+  text-transform: uppercase;
+  left: 0;
+  bottom: 0;
+  color: $prymary-bg-color;
+  font-weight: 700;
+  line-height: 1.17;
 }
