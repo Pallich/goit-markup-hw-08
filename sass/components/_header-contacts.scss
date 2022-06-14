@@ -6,12 +6,6 @@
 }
 
 .header__contacts-list {
-  // display: none;
-  // display: flex;
-  // margin-left: auto;
-
-  // margin-top: 300px;
-
   @media screen and (max-width: 767px) {
     margin-bottom: 64px;
     line-height: 1.14;
@@ -29,6 +23,10 @@
 .header__contacts-icon-phone {
   fill: $header-contacts;
 
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: $animations-time-function;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -40,21 +38,7 @@
   @media screen and (min-width: 1200px) {
     margin-right: 10px;
   }
-  // &:hover,
-  // &:focus {
-  //   color: $active-color;
-  //   fill: $active-color;
-  // }
 }
-
-// margin-right: 10px;
-
-//     &:hover,
-//     &:focus {
-//         color: $active-color;
-//         fill: $active-color;
-//     }
-// }
 
 .header__contacts-icon-mail {
   @media screen and (min-width: 768px) {
@@ -88,11 +72,6 @@
   color: $active-color;
   cursor: pointer;
 
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
-
   @media screen and (min-width: 768px) {
     font-size: 12px;
     line-height: 1.17;
@@ -108,11 +87,6 @@
   letter-spacing: 0.02em;
   color: $header-contacts;
   cursor: pointer;
-
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
 
   @media screen and (min-width: 768px) {
     font-size: 12px;
@@ -133,15 +107,9 @@
     display: flex;
     align-items: center;
 
-    transition-property: color, fill;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: $animations-time-function;
-
-    &:hover,
-    &:focus {
-      color: $active-color;
-      fill: $active-color;
-    }
   }
 }
 
@@ -156,4 +124,14 @@
     margin-right: 30px;
     margin-bottom: 0;
   }
+}
+
+.header__contacts-mail:hover .header__contacts-icon-mail,
+.header__contacts-tel:hover .header__contacts-icon-phone {
+  fill: $active-color;
+}
+
+.header__contacts-mail:hover,
+.header__contacts-tel:hover {
+  color: $active-color;
 }

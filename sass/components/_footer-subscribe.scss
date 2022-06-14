@@ -1,7 +1,6 @@
 .footer__subscribe-label {
   @media screen and (min-width: 1200px) {
     display: flex;
-    // @extend %centeredFlex;
   }
 }
 
@@ -25,7 +24,6 @@
 }
 
 .footer__subscribe-input {
-  // margin-bottom: 20px;
   padding: 15px;
   background-color: $footer-background;
   width: 100%;

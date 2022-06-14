@@ -4,10 +4,9 @@
     align-items: center;
     margin-left: 88px;
     margin-right: 84px;
-    // margin-right: 100%;
-  }
+ }
 
-  // display: none;
+  
 
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
@@ -16,12 +15,12 @@
 }
 
 .header__nav-link {
-  // position: relative;
+  
 
   color: $prymary-text-color;
   font-weight: 500;
   font-size: 40px;
-  // text-align: center;
+  
   line-height: 1.17;
   letter-spacing: 0.02em;
 
@@ -67,17 +66,6 @@
   }
 }
 
-// .header__nav-link {
-//     display: block;
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-// }
-
-// .header__nav-item:last-child {
-//   @media screen and (min-width: 1200px) {
-//     margin-right: 305px;
-//   }
-// }
 
 .header__nav-item {
   @media screen and (min-width: 768px) {

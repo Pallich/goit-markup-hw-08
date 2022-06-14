@@ -1,24 +1,28 @@
 .logo {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
-    // font-size: 26px;
-    // line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: $active-color;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: $active-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .header__logo {
-    color: $prymary-text-color;
+  color: $prymary-text-color;
 }
 
 .footer__logo {
-    display: inline-block;
-    margin-bottom: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .footer__logo-second {
-    color: $prymary-bg-color;
+  color: $prymary-bg-color;
 }

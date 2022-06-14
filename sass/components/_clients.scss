@@ -1,8 +1,6 @@
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
-  // margin-left: -5px;
-  // margin-right: -5px;
 }
 
 .clients__title {
@@ -24,17 +22,10 @@
 
   @media screen and (max-width: 767px) {
     width: calc((100% - (2 * 30px)) / 2);
-    // width: calc(50% - 30px);
   }
 }
 
 .client__logo-box {
-  // @media screen and (min-width: 1200px) {
-  //   width: 170px;
-  //   height: 92px;
-  //   margin: 30px;
-  // }
-
   border: 1px solid $team-icons-color;
   border-radius: 4px;
   @extend %centeredFlex;
@@ -59,31 +50,9 @@
   @media screen and (min-width: 1200px) {
     width: 170px;
     height: 92px;
-    // margin: 30px;
   }
 }
 
 .clients__icon {
   fill: $team-icons-color;
 }
-
-// .client__logo-box {
-//   @media screen and (min-width: 1200px) {
-//     width: 170px;
-//     height: 92px;
-//     margin: 30px;
-//   }
-// }
-
-// .clients__items {
-//     fill: $team-icons-color;
-
-//     &:not(:last-child) {
-//             margin-right: 30px;
-//                 }
-//                 }
-
-// .clients__icon {
-//     width: 106px;
-//     height: 60px;
-// }
