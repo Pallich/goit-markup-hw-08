@@ -1,12 +1,17 @@
 .benefits.section {
-  padding-bottom: 0;
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .benefits__icon-box {
   @extend %centeredFlex;
   height: 120px;
-   background-color: $button-background;
+  background-color: $button-background;
   border-radius: 4px;
   margin-bottom: 30px;
 
@@ -51,7 +56,6 @@
 }
 
 .benefits__items:not(:last-child) {
-  // margin-right: 30px;
   margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
@@ -69,6 +73,10 @@
   text-align: center;
 
   margin-bottom: 10px;
+
+  @media screen and (min-width: 460px) {
+    text-align: left;
+  }
 }
 
 .benefits__text {

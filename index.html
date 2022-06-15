@@ -428,7 +428,7 @@
         <div class="footer__contacts">
           <a lang="en" class="footer__logo link logo" href="./index.html">Web<span class="footer__logo-second">Studio</span></a>
 
-          <address>
+          <address class="footer__address">
             <!-- contacts -->
             <ul class="list">
               <li class="footer__contacts-items">
@@ -518,7 +518,7 @@
 
           <label class="recall__name">
             <span class="recall__label">Имя</span>
-            <input type="text" class="recall__input" name="name" autocomplete="name" />
+            <input type="text" class="recall__input" name="name" autocomplete="name" required />
             <svg class="recall__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-modal-name"></use>
             </svg>
@@ -526,7 +526,7 @@
 
           <label class="recall__phone">
             <span class="recall__label">Телефон</span>
-            <input type="tel" class="recall__input" name="phone" autocomplete="tel" />
+            <input type="tel" class="recall__input" name="phone" autocomplete="tel" required />
             <svg class="recall__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-modal-phone"></use>
             </svg>
@@ -534,7 +534,7 @@
 
           <label class="recall__email">
             <span class="recall__label">Почта</span>
-            <input type="email" class="recall__input" name="email" autocomplete="email" />
+            <input type="email" class="recall__input" name="email" autocomplete="email" required />
             <svg class="recall__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-modal-email"></use>
             </svg>
@@ -546,7 +546,7 @@
           </label>
 
           <label class="recall__confirm">
-            <input type="checkbox" name="confirm" class="recall__check visually-hidden" />
+            <input type="checkbox" name="confirm" class="recall__check visually-hidden" required />
 
             <span class="recall__check-icon">
               <svg width="11" height="8">
